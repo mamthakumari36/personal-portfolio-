@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamtha-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container" id="home-pg">
+        <nav>
+            <div class="left max_nav">Mamtha's Portfolio</div>
+            <div class="right">
+                <ul class="v_class">
+                    <li><a href="#home-pg">Home</a></li>
+                    <li><a href="#about-pg">About</a></li>
+                    <li><a href="#project-pg">Projects</a></li>
+                    <li><a href="#contact-pg">Contact</a></li>
+                    <li><a href="resume.final.pdf" download="mamtha-resume"><i class='bx bxs-download'></i> Resume</a>
+                    </li>
+
+                </ul>
+                <p class="open_menu" onclick="openmenu()"><i class='bx bx-menu'></i></p>
+            </div>
+        </nav>
+
+        <div class="home">
+
+            <div class="detail-con">
+                <p class="name">Hi, I'm Mamtha Kumari</p>
+                <h2 class="name2">
+                    <span class="first-text">And I'm a</span>
+                    <span class="text-move">Front-End Developer</span>
+                </h2>
+                <p class="details">This is my personal portfolio to showcase all my works <br>and other skills.</p>
+
+
+                <div class="logo">
+                    <a href="https://github.com/mamthakumari36"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/mamtha-kumari-65055124b"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+            <div class="image"><img src="image1-removebg-preview.png" alt=""></div>
+        </div>
+    </div>
+    <!----------About page--------->
+    <div class="about" id="about-pg">
+        <section class="about-me">
+
+            <div class="about-img"><img src="pic.jpeg"></div>
+            <div class="me-detail">
+                <h3>About <span>Me</span></h3>
+                <p id="about-resp">
+                    My name is Mamtha Kumari.I have completed BCA(Bachelor's of Computer Application) from
+                    karnataka college of management and science. I'm a Front-End developer with good knowledge of
+                    Front-End technologies like HTML, CSS and JavaScript. I'm a passionate person and a quick learner
+                    too.Apart from this, I love playing sports and I also like to do paintings.</p>
+                <div id="about-tab">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-list active-list" id="skills">
+                    <ul>
+                        <li><i style="color: orangered;" class='bx bxl-html5'></i>html</li>
+                        <li><i style="color: skyblue;" class='bx bxl-css3'></i>css</li>
+                        <li><i style="color: yellow;" class='bx bxl-javascript'></i>JavaScript</li>
+                        <li><i style="color: red;" class='bx bxl-java'></i>java</li>
+                        <li><i style="color: green;" class='bx bxl-c-plus-plus'></i>c++</li>
+                        <li><i style="color: purple;" class='bx bxl-visual-studio'></i>vb.net</li>
+                    </ul>
+                </div>
+                <div class="tab-list close-list" id="education">
+                    <ul>
+                        <li><span>2023</span><br>BCA from karnataka college of management & science</li>
+                        <li><span>2020</span><br>2<sup>nd</sup> Puc from karnataka composite PU college</li>
+                        <li><span>2018</span><br>SSLC from manasa public school</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-------------Project page---------->
+    <div class="project" id="project-pg">
+        <h3>Projects</h3>
+        <div class="pro-details">
+            <h2>library management system</h2>
+            <ul>
+                <li>The main objective of this application is to provide access to student's and faculty's </li>
+                <li>Front-End: VB.Net and Back-End: MSSQL</li>
+                <li>Role: Design and Coding</li>
+            </ul>
+            <div class="grid-container">
+                <div class="grid-item grid-item1">
+                    Library Management System is an application used by librarian to manage the
+                    library using a computerized system where they can record various transactions
+                    like Issue of books, Return of books, Addition of books, Details of student and faculty etc.
+                    Students and faculty's can see number of books and names available in the library.They can also see
+                    which and what books they have borrowed from library on which date.
+                </div>
+                <div class="grid-item grid-item2">
+                    <img src="Screenshot (14).png" class="image1">
+                </div>
+            </div>
+            <input type="button" value="See more..." id="learn-btn" onclick="project1()">
+        </div>
+    </div>
+    <!---------------Contact page--------->
+    <div class="contact-me" id="contact-pg">
+        <h3>Contact <span> Me</span></h3>
+        <div class="con-bg">
+            <img src="d3ac19058e60fe08eec268759ff5137c.jpg">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="con-name">
+
+                    <div class="labels"> <label for="name">Enter Name(Required)</label></div><br>
+                    <input type="text" id="name" size="30px" autocomplete="off" required><br>
+                    <div class="labels"><label for="email">Enter Email(Required)</label></div><br>
+                    <input type="email" id="email" size="30px" autocomplete="off" required><br>
+                    <div class="labels"> <label class="lab" for="msg">Message(Required)</label></div><br>
+                    <textarea id="msg" cols="30" rows="10" placeholder="write your Message..." required></textarea><br>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
